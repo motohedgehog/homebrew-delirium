@@ -1,0 +1,37 @@
+* Delirium
+This is my personal formulae tap for [[https://brew.sh][Homebrew.]]
+
+It's named after [[https://www.deliriumvillage.com/][Delirium,]] a cafe in Brussells, known for its insanely long beer list.
+** Usage
+Use the following command to add this tap to your Homebrew installation:
+#+BEGIN_SRC shell
+$ brew tap ylectric/delirium
+#+END_SRC
+
+To install, say, [[https://www.gnu.org/software/emacs/][Emacs]] from a formula provided by this tap:
+#+BEGIN_SRC shell
+$ brew install ylectric/delirium/emacs
+#+END_SRC
+
+If you want to always prefer the formulae provided by this tap over similar formulae
+provided by [[https://github.com/Homebrew/homebrew-core][homebrew-core,]] you have to [[https://docs.brew.sh/Taps#formula-duplicate-names][pin it:]]
+#+BEGIN_SRC shell
+$ brew tap-pin ylectric/delirium
+#+END_SRC
+** Formulae
+*** [[https://www.gnu.org/software/emacs/][Emacs]]
+This formula is similar to the [[https://github.com/Homebrew/homebrew-core/blob/master/Formula/emacs.rb][core one,]] with the following changes included:
+- Support for pretest versions via ~devel~ spec
+- Support for multicolor fonts (think emoji) via [[https://gist.github.com/ylectric/e68cb72a0b2f134ad4ce29cd1ab40eeb][this gist]]
+** FAQ
+*** Why not contributing these formulae to [[https://github.com/Homebrew/homebrew-core][homebrew-core?]]
+Some of these formulae will never be integrated into [[https://github.com/Homebrew/homebrew-core][homebrew-core]] due to their nature, namely:
+- Homebrew's maintainers decided to [[https://github.com/Homebrew/homebrew-core/issues/31510][remove all options from the core formulae]]
+- Homebrew forbids ~devel~ specs and non-essential patches in the core formulae
+
+As for the rest, I may consider contributing them once I have built enough confidence in their quality.
+
+** License
+The code in this repository is licensed under the terms of the BSD 2-Clause License as found in the [[LICENSE]] file.
+
+As this is my personal repository, the license you receive to my code is from me and not from my employer (Facebook).
