@@ -1,0 +1,9 @@
+2019-02-23  Alexander Fomin  <ylectric@users.noreply.github.com>
+
+	* README.org (Change Log): Add information about change log.
+	* emacs.rb (Emacs): Update `devel' spec to 26.1.92.
+	* ChangeLog: New file.
+
+Copyright (c) 2019 Alexander Fomin
+Copying and distribution of this file, with or without modification, are
+permitted provided the copyright notice and this notice are preserved.
