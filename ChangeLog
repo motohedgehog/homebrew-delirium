@@ -1,3 +1,9 @@
+2019-04-21  Alexander Fomin  <ylectric@users.noreply.github.com>
+
+	* emacs.rb (Emacs): Update `stable' spec to 26.2.
+	Remove bottle for macOS 10.11 (El Capitan).
+	Update `devel' spec to 27.0.50.
+
 2019-03-30  Alexander Fomin  <ylectric@users.noreply.github.com>
 
 	* emacs.rb (Emacs): Update `devel' spec to 26.2-rc1.
