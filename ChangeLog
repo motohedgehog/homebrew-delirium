@@ -1,4 +1,6 @@
 2019-04-22  Alexander Fomin  <ylectric@users.noreply.github.com>
+	* beets.rb (Beets): New formula.
+	* README.org (Formulae): Add section about Beets.
 
 	* emacs.rb (Emacs): Replace `--with-imagemagick@6' option with
 	`--with-imagemagick' option. Use ImageMagick 7 for Emacs 27.
