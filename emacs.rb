@@ -31,13 +31,11 @@ class Emacs < Formula
   option "without-libxml2", "Don't build with libxml2 support"
   option "with-modules", "Compile with dynamic modules support"
   option "with-multicolor-fonts", "Compile with multicolor fonts support"
+  option "with-imagemagick", "Compile with ImageMagick support"
 
   depends_on "pkg-config" => :build
   depends_on "gnutls"
   depends_on "dbus" => :optional
-  # Emacs does not support ImageMagick 7:
-  # Reported on 2017-03-04: https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25967
-  depends_on "imagemagick@6" => :optional
   depends_on "librsvg" => :optional
   depends_on "mailutils" => :optional
 
@@ -46,6 +44,14 @@ class Emacs < Formula
       url "https://gist.githubusercontent.com/ylectric/e68cb72a0b2f134ad4ce29cd1ab40eeb/raw/d228500d9b924ebb1e6c4937d29be4ee5805757c/0001-Bring-multicolor-fonts-back-on-macOS.patch"
       sha256 "94d5f6ba90c754a0a5178be7b684773e04d7f7818559e819d7ed2671d68c86a2"
     end
+  end
+
+  if build.with? "imagemagick"
+    # Emacs 26 does not support ImageMagick 7:
+    # Reported on 2017-03-04: https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25967
+    stable { depends_on "imagemagick@6" }
+    devel { depends_on "imagemagick" }
+    head { depends_on "imagemagick" }
   end
 
   def install
@@ -74,7 +80,7 @@ class Emacs < Formula
     # Note that if ./configure is passed --with-imagemagick but can't find the
     # library it does not fail but imagemagick support will not be available.
     # See: https://debbugs.gnu.org/cgi/bugreport.cgi?bug=24455
-    if build.with? "imagemagick@6"
+    if build.with? "imagemagick"
       args << "--with-imagemagick"
     else
       args << "--without-imagemagick"

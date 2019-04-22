@@ -1,3 +1,9 @@
+2019-04-22  Alexander Fomin  <ylectric@users.noreply.github.com>
+
+	* emacs.rb (Emacs): Replace `--with-imagemagick@6' option with
+	`--with-imagemagick' option. Use ImageMagick 7 for Emacs 27.
+	* README.org (Emacs): Update.
+
 2019-04-21  Alexander Fomin  <ylectric@users.noreply.github.com>
 
 	* emacs.rb (Emacs): Update `stable' spec to 26.2.
