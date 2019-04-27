@@ -12,18 +12,12 @@ To install, say, [[https://www.gnu.org/software/emacs/][Emacs]] from a formula p
 #+BEGIN_SRC shell
 $ brew install ylectric/delirium/emacs
 #+END_SRC
-
-If you want to always prefer the formulae provided by this tap over similar formulae
-provided by [[https://github.com/Homebrew/homebrew-core][homebrew-core,]] you have to [[https://docs.brew.sh/Taps#formula-duplicate-names][pin it:]]
-#+BEGIN_SRC shell
-$ brew tap-pin ylectric/delirium
-#+END_SRC
 ** Formulae
 *** [[https://github.com/beetbox/beets][Beets]]
 This formula has plethora of options which mostly resemble [[https://beets.readthedocs.io/en/latest/plugins/index.html#using-plugins][various Beets plugins.]]
 **** Caveats
 As of April 2019, it's been almost a year since the latest stable version was released.
-Therefore, some of its code is known to benot compatible with Python 3.7+.
+Therefore, some of its code is known to be not compatible with Python 3.7+.
 Please prefer the development version available via ~--HEAD~ for now.
 *** [[https://www.gnu.org/software/emacs/][Emacs]]
 This formula is similar to the [[https://github.com/Homebrew/homebrew-core/blob/master/Formula/emacs.rb][core one,]] with the following changes included:
