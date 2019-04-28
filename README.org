@@ -24,6 +24,8 @@ This formula is similar to the [[https://github.com/Homebrew/homebrew-core/blob/
 - Support for pretest versions via ~devel~ spec
 - Support for multicolor fonts (think emoji) via [[https://gist.github.com/ylectric/e68cb72a0b2f134ad4ce29cd1ab40eeb][this gist]]
 - Support for ImageMagick 7 on Emacs 27
+*** [[https://github.com/palantir/python-language-server][Python Language Server]]
+This formula provides an easy way to install Palantir's [[https://github.com/palantir/python-language-server][Python Language Server]] and its plugins.
 ** Change Log
 An extensive change log can be found in [[ChangeLog]] file.
 

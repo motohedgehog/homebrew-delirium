@@ -1,3 +1,8 @@
+2019-04-28  Alexander Fomin  <github@afomin.dev>
+
+	* README.org (Formulae): Add section about Python Language Server.
+	* python-language-server.rb: New file.
+
 2019-04-27  Alexander Fomin  <github@afomin.dev>
 
 	* README.org (Usage): Remove section about `tap-pin'.
