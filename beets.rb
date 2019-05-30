@@ -3,8 +3,8 @@ class Beets < Formula
 
   desc "Music library manager and MusicBrainz tagger"
   homepage "http://beets.io/"
-  url "https://files.pythonhosted.org/packages/03/00/4e1bb1a979731721dc84559ef913a7aac196f57acdfe475d62633d514571/beets-1.4.7.tar.gz"
-  sha256 "3a33dba692bbd12fc8b92b0853513147367be06b4d93960c8cc5bda493f96f70"
+  url "https://files.pythonhosted.org/packages/0b/94/f3a4a9e4b622c725b4ed1fb3503cccac9de7b91644648e8fb8bb9ed7b322/beets-1.4.8.tar.gz"
+  sha256 "1a62195c029405f4c6b6b72842347283994af5680cce04c340929120b2c2c4a3"
   head "https://github.com/beetbox/beets.git"
 
   option "with-absubmit", "Build with AcousticBrainz Submit plugin support"
@@ -116,13 +116,13 @@ class Beets < Formula
 
   if build.with? "chroma"
     resource "audioread" do
-      url "https://files.pythonhosted.org/packages/f0/41/8cd160c6b2046b997d571a744a7f398f39e954a62dd747b2aae1ad7f07d4/audioread-2.1.6.tar.gz"
-      sha256 "b0b9270c20833a75ce0d167fb2fdad52ddcd8e8f300be8afad3ac9715850bc50"
+      url "https://files.pythonhosted.org/packages/e6/33/46ada16d76548c2dfbcb8d06b3481df7ecd08239402b2e7f0086bffaed22/audioread-2.1.7.tar.gz"
+      sha256 "f488f9e6fa1ccb09289e3db194639bc6388168b27ef27b2c62380aa1d35a3abe"
     end
 
     resource "pyacoustid" do
-      url "https://files.pythonhosted.org/packages/da/d1/bf83cce400d5513891ea52e83fde42f17299f80a380f427d50428f817a3c/pyacoustid-1.1.5.tar.gz"
-      sha256 "efb6337a470c9301a108a539af7b775678ff67aa63944e9e04ce4216676cc777"
+      url "https://files.pythonhosted.org/packages/db/bc/c797db70d54d52f753eb3cc301937a405d0a7507008ee0eead8251a5349f/pyacoustid-1.1.6.tar.gz"
+      sha256 "762ae09cf18a715155466be23bea4a6e4fdb8fb26bc80e091d227e2150fd7469"
     end
   end
 
@@ -160,8 +160,8 @@ class Beets < Formula
     end
 
     resource "httplib2" do
-      url "https://files.pythonhosted.org/packages/75/d0/f213003c9deec99fb4f46e54580b93a3b121c487d9d6d888fc12267eb2a2/httplib2-0.12.1.tar.gz"
-      sha256 "4ba6b8fd77d0038769bf3c33c9a96a6f752bc4cdf739701fdcaf210121f399d4"
+      url "https://files.pythonhosted.org/packages/67/33/29779c5aaeac796679a37bf798b3c2adbfaae7dbf13e966b0ab9c3aa06c0/httplib2-0.12.3.tar.gz"
+      sha256 "a18121c7c72a56689efbf1aef990139ad940fee1e64c6f2458831736cd593600"
     end
 
     resource "lxml" do
@@ -185,8 +185,8 @@ class Beets < Formula
     end
 
     resource "pbr" do
-      url "https://files.pythonhosted.org/packages/97/76/c151aa4a3054ce63bb6bbd32f3541e4ae068534ed8b74ee2687f6773b013/pbr-5.1.3.tar.gz"
-      sha256 "8c361cc353d988e4f5b998555c88098b9d5964c2e11acf7b0d21925a66bb5824"
+      url "https://files.pythonhosted.org/packages/11/3d/3b5bbf398535d78a8cd7cf01441a745dedda5ca69f82658f2c7672bcdcce/pbr-5.2.0.tar.gz"
+      sha256 "d950c64aeea5456bbd147468382a5bb77fe692c13c9f00f0219814ce5b642755"
     end
 
     resource "proboscis" do
@@ -205,8 +205,8 @@ class Beets < Formula
     end
 
     resource "pyasn1-modules" do
-      url "https://files.pythonhosted.org/packages/bd/a5/ef7bf693e8a8f015386c9167483199f54f8a8ec01d1c737e05524f16e792/pyasn1-modules-0.2.4.tar.gz"
-      sha256 "a52090e8c5841ebbf08ae455146792d9ef3e8445b21055d3a3b7ed9c712b7c7c"
+      url "https://files.pythonhosted.org/packages/ec/0b/69620cb04a016e4a1e8e352e8a42717862129b574b3479adb2358a1f12f7/pyasn1-modules-0.2.5.tar.gz"
+      sha256 "ef721f68f7951fab9b0404d42590f479e30d9005daccb1699b0a51bb4177db96"
     end
 
     resource "pycryptodomex" do
@@ -225,8 +225,8 @@ class Beets < Formula
     end
 
     resource "urllib3" do
-      url "https://files.pythonhosted.org/packages/fd/fa/b21f4f03176463a6cccdb612a5ff71b927e5224e83483012747c12fc5d62/urllib3-1.24.2.tar.gz"
-      sha256 "9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3"
+      url "https://files.pythonhosted.org/packages/9a/8b/ea6d2beb2da6e331e9857d0a60b79ed4f72dcbc4e2c7f2d2521b0480fda2/urllib3-1.25.2.tar.gz"
+      sha256 "a53063d8b9210a7bdec15e7b272776b9d42b2fd6816401a0d43006ad2f9902db"
     end
 
     resource "validictory" do
@@ -258,8 +258,8 @@ class Beets < Formula
 
   if build.with? "sonosupdate"
     resource "soco" do
-      url "https://files.pythonhosted.org/packages/60/4b/ecbf9a4fb4c0042fb77e782476d961dfd9c761fa617b9d8883a0a16785ea/soco-0.16.tar.gz"
-      sha256 "7bed4475e3f134283af1f520a9b2e6ce2a8e69bdc1b58ee68528b3d093972424"
+      url "https://files.pythonhosted.org/packages/75/f0/17abb9f43e65359fd7fb180979127d04a4035c80f420f42ca1587dbb97f9/soco-0.17.tar.gz"
+      sha256 "48eea75738547f533ba8719c5c46fa9f920d7f9419884b87d21bddf24b34fc97"
     end
 
     resource "xmltodict" do

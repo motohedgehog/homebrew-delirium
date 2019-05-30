@@ -1,3 +1,9 @@
+2019-05-22  Alexander Fomin  <github@afomin.dev>
+
+	* beets.rb (Beets): Update `stable' spec to 1.4.8.
+	Use audioread 2.1.7, pyacoustid 1.1.6, httplib2 0.12.3, pbr 5.2.0,
+	pyasn1-modules 0.2.5, urllib3 1.25.2 and soco 0.17.
+
 2019-04-28  Alexander Fomin  <github@afomin.dev>
 
 	* README.org (Formulae): Add section about Python Language Server.
