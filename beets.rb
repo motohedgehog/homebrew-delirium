@@ -3,8 +3,8 @@ class Beets < Formula
 
   desc "Music library manager and MusicBrainz tagger"
   homepage "https://beets.readthedocs.io"
-  url "https://files.pythonhosted.org/packages/0b/94/f3a4a9e4b622c725b4ed1fb3503cccac9de7b91644648e8fb8bb9ed7b322/beets-1.4.8.tar.gz"
-  sha256 "1a62195c029405f4c6b6b72842347283994af5680cce04c340929120b2c2c4a3"
+  url "https://files.pythonhosted.org/packages/3a/a8/6ac61e3ca16da6278c681381ed392bc02e6d410ea3ff3a4af34de1379b38/beets-1.4.9.tar.gz"
+  sha256 "d29b432cab0c80947b5229f548762948c4dd4a430e5d02760bfeb95da3cc8054"
   head "https://github.com/beetbox/beets.git"
 
   option "with-absubmit", "Build with AcousticBrainz Submit plugin support"
@@ -24,8 +24,8 @@ class Beets < Formula
   depends_on "python"
 
   resource "jellyfish" do
-    url "https://files.pythonhosted.org/packages/69/9f/ae6f6ad509725b71d45bb408953c850da7a2ecc3dbdad4063a825702ba29/jellyfish-0.7.1.tar.gz"
-    sha256 "79a5640bb47120596c91b9030ed3164cc5a3d0bb6b15779bb82c3c21f8efa1c1"
+    url "https://files.pythonhosted.org/packages/3f/80/bcacc7affb47be7279d7d35225e1a932416ed051b315a7f9df20acf04cbe/jellyfish-0.7.2.tar.gz"
+    sha256 "cb09c50d7e2bb7b926fc7654762bc81f9c629e0c92ae7137bf22b34f39515286"
   end
 
   resource "munkres" do
@@ -44,8 +44,8 @@ class Beets < Formula
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/9f/2c/9417b5c774792634834e730932745bc09a7d36754ca00acf1ccd1ac2594d/PyYAML-5.1.tar.gz"
-    sha256 "436bc774ecf7c103814098159fbb84c2715d25980175292c648f2da143909f95"
+    url "https://files.pythonhosted.org/packages/a3/65/837fefac7475963d1eccf4aa684c23b95aa6c1d033a2c5965ccb11e22623/PyYAML-5.1.1.tar.gz"
+    sha256 "b4bb4d3f5e232425e25dda21c070ce05168a786ac9eda43768ab7f3ac2770955"
   end
 
   resource "six" do
@@ -80,13 +80,13 @@ class Beets < Formula
     end
 
     resource "requests" do
-      url "https://files.pythonhosted.org/packages/52/2c/514e4ac25da2b08ca5a464c50463682126385c4272c18193876e91f4bc38/requests-2.21.0.tar.gz"
-      sha256 "502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e"
+      url "https://files.pythonhosted.org/packages/01/62/ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz"
+      sha256 "11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"
     end
 
     resource "urllib3" do
-      url "https://files.pythonhosted.org/packages/fd/fa/b21f4f03176463a6cccdb612a5ff71b927e5224e83483012747c12fc5d62/urllib3-1.24.2.tar.gz"
-      sha256 "9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3"
+      url "https://files.pythonhosted.org/packages/4c/13/2386233f7ee40aa8444b47f7463338f3cbdf00c316627558784e3f542f07/urllib3-1.25.3.tar.gz"
+      sha256 "dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232"
     end
   end
 
@@ -116,13 +116,13 @@ class Beets < Formula
 
   if build.with? "chroma"
     resource "audioread" do
-      url "https://files.pythonhosted.org/packages/e6/33/46ada16d76548c2dfbcb8d06b3481df7ecd08239402b2e7f0086bffaed22/audioread-2.1.7.tar.gz"
-      sha256 "f488f9e6fa1ccb09289e3db194639bc6388168b27ef27b2c62380aa1d35a3abe"
+      url "https://files.pythonhosted.org/packages/2e/0b/940ea7861e0e9049f09dcfd72a90c9ae55f697c17c299a323f0148f913d2/audioread-2.1.8.tar.gz"
+      sha256 "073904fabc842881e07bd3e4a5776623535562f70b1655b635d22886168dd168"
     end
 
     resource "pyacoustid" do
-      url "https://files.pythonhosted.org/packages/db/bc/c797db70d54d52f753eb3cc301937a405d0a7507008ee0eead8251a5349f/pyacoustid-1.1.6.tar.gz"
-      sha256 "762ae09cf18a715155466be23bea4a6e4fdb8fb26bc80e091d227e2150fd7469"
+      url "https://files.pythonhosted.org/packages/35/76/2e51b687a9967a00e948b55b076809edc0fef8a13023309ce9ab59c28b8e/pyacoustid-1.1.7.tar.gz"
+      sha256 "07394a8ae84625a0a6fef2d891d19687ff59cd955caaf48097da2826043356fd"
     end
   end
 
@@ -160,13 +160,13 @@ class Beets < Formula
     end
 
     resource "httplib2" do
-      url "https://files.pythonhosted.org/packages/67/33/29779c5aaeac796679a37bf798b3c2adbfaae7dbf13e966b0ab9c3aa06c0/httplib2-0.12.3.tar.gz"
-      sha256 "a18121c7c72a56689efbf1aef990139ad940fee1e64c6f2458831736cd593600"
+      url "https://files.pythonhosted.org/packages/5c/f3/7206894743389a4f727b73e6df4da60c9ee3cbef3f5afd82814592eafa8b/httplib2-0.13.0.tar.gz"
+      sha256 "d1146939d270f1f1eb8cbf8f5aa72ff37d897faccca448582bb1e180aeb4c6b2"
     end
 
     resource "lxml" do
-      url "https://files.pythonhosted.org/packages/7d/29/174d70f303016c58bd790c6c86e6e86a9d18239fac314d55a9b7be501943/lxml-4.3.3.tar.gz"
-      sha256 "4a03dd682f8e35a10234904e0b9508d705ff98cf962c5851ed052e9340df3d90"
+      url "https://files.pythonhosted.org/packages/da/b5/d3e0d22649c63e92cb0902847da9ae155c1e801178ab5d272308f35f726e/lxml-4.3.4.tar.gz"
+      sha256 "3ce1c49d4b4a7bc75fb12acb3a6247bb7a91fe420542e6d671ba9187d12a12c2"
     end
 
     resource "MechanicalSoup" do
@@ -175,8 +175,8 @@ class Beets < Formula
     end
 
     resource "mock" do
-      url "https://files.pythonhosted.org/packages/0c/53/014354fc93c591ccc4abff12c473ad565a2eb24dcd82490fae33dbf2539f/mock-2.0.0.tar.gz"
-      sha256 "b158b6df76edd239b8208d481dc46b6afd45a846b7812ff0ce58971cf5bc8bba"
+      url "https://files.pythonhosted.org/packages/2e/ab/4fe657d78b270aa6a32f027849513b829b41b0f28d9d8d7f8c3d29ea559a/mock-3.0.5.tar.gz"
+      sha256 "83657d894c90d5681d62155c82bda9c1187827525880eda8ff5df4ec813437c3"
     end
 
     resource "oauth2client" do
@@ -185,8 +185,8 @@ class Beets < Formula
     end
 
     resource "pbr" do
-      url "https://files.pythonhosted.org/packages/11/3d/3b5bbf398535d78a8cd7cf01441a745dedda5ca69f82658f2c7672bcdcce/pbr-5.2.0.tar.gz"
-      sha256 "d950c64aeea5456bbd147468382a5bb77fe692c13c9f00f0219814ce5b642755"
+      url "https://files.pythonhosted.org/packages/fe/9c/07e2c59b987f7cb9e5877151667a27ab00f11275d9d8951c2b29dd323b01/pbr-5.3.0.tar.gz"
+      sha256 "9fb1c3371344cd617eb073c6c00872e9b0e5a7fefed6cd29f327a1b26ab5c498"
     end
 
     resource "proboscis" do
@@ -195,8 +195,8 @@ class Beets < Formula
     end
 
     resource "protobuf" do
-      url "https://files.pythonhosted.org/packages/cf/72/8c1ed9148ded82adbb76c30f958c6d456a2abc08f092b62a586bdf973b80/protobuf-3.7.1.tar.gz"
-      sha256 "21e395d7959551e759d604940a115c51c6347d90a475c9baf471a1a86b5604a9"
+      url "https://files.pythonhosted.org/packages/65/95/8fe278158433a9bc34723f9ecbdee3097fb6baefaca932ec0331a9f80244/protobuf-3.8.0.tar.gz"
+      sha256 "8c61cc8a76e9d381c665aecc5105fa0f1878cf7db8b5cd17202603bcb386d0fc"
     end
 
     resource "pyasn1" do
@@ -210,8 +210,8 @@ class Beets < Formula
     end
 
     resource "pycryptodomex" do
-      url "https://files.pythonhosted.org/packages/05/86/92b303bc4ed00451401e99e90003d5361fb054b9af9af2490b1b44caeaef/pycryptodomex-3.8.1.tar.gz"
-      sha256 "9251b3f6254d4274caa21b79bd432bf07afa3567c6f02f11861659fb6245139a"
+      url "https://files.pythonhosted.org/packages/8d/44/e79bc9f023ac193f265fd1cec27cd161e22ffacb2950220b09af0fe0b32a/pycryptodomex-3.8.2.tar.gz"
+      sha256 "e50b15af6bbdc6b5f8bd70d818cb846b15303ffa6c371b799db561a403a21607"
     end
 
     resource "python-dateutil" do
