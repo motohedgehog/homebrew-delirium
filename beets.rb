@@ -59,7 +59,7 @@ class Beets < Formula
   end
 
   # Plugins that need `requests' module
-  need_requests = %w[absubmit beatport chroma embyupdate fetchart lyrics thumbnails]
+  need_requests = %w[absubmit beatport chroma embyupdate fetchart gmusic lyrics thumbnails]
   # Plugins that need `beautifulsoup4' module
   need_beautifulsoup = %w[gmusic lyrics]
 
@@ -222,11 +222,6 @@ class Beets < Formula
     resource "rsa" do
       url "https://files.pythonhosted.org/packages/cb/d0/8f99b91432a60ca4b1cd478fd0bdf28c1901c58e3a9f14f4ba3dba86b57f/rsa-4.0.tar.gz"
       sha256 "1a836406405730121ae9823e19c6e806c62bbad73f890574fff50efa4122c487"
-    end
-
-    resource "urllib3" do
-      url "https://files.pythonhosted.org/packages/9a/8b/ea6d2beb2da6e331e9857d0a60b79ed4f72dcbc4e2c7f2d2521b0480fda2/urllib3-1.25.2.tar.gz"
-      sha256 "a53063d8b9210a7bdec15e7b272776b9d42b2fd6816401a0d43006ad2f9902db"
     end
 
     resource "validictory" do

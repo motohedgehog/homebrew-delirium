@@ -1,6 +1,7 @@
 2019-06-20  Alexander Fomin  <github@afomin.dev>
 
 	* beets.rb (Beets): Use HTTPS enabled homepage.
+	Install requests for Google Music plugin.
 
 2019-05-22  Alexander Fomin  <github@afomin.dev>
 
