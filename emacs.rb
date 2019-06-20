@@ -39,8 +39,8 @@ class Emacs < Formula
   depends_on "librsvg" => :optional
   depends_on "mailutils" => :optional
 
-  stable do
-    if build.with? "multicolor-fonts"
+  if build.with? "multicolor-fonts"
+    stable do
       patch do
         url "https://gist.githubusercontent.com/ylectric/e68cb72a0b2f134ad4ce29cd1ab40eeb/raw/d228500d9b924ebb1e6c4937d29be4ee5805757c/0001-Bring-multicolor-fonts-back-on-macOS.patch"
         sha256 "94d5f6ba90c754a0a5178be7b684773e04d7f7818559e819d7ed2671d68c86a2"
