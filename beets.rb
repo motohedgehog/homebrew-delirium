@@ -2,7 +2,7 @@ class Beets < Formula
   include Language::Python::Virtualenv
 
   desc "Music library manager and MusicBrainz tagger"
-  homepage "http://beets.io/"
+  homepage "https://beets.readthedocs.io"
   url "https://files.pythonhosted.org/packages/0b/94/f3a4a9e4b622c725b4ed1fb3503cccac9de7b91644648e8fb8bb9ed7b322/beets-1.4.8.tar.gz"
   sha256 "1a62195c029405f4c6b6b72842347283994af5680cce04c340929120b2c2c4a3"
   head "https://github.com/beetbox/beets.git"
