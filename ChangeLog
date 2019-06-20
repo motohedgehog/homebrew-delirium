@@ -1,7 +1,3 @@
-2019-06-20  Alexander Fomin  <afomin@MacBooklexander>
-
-	* emacs.rb (Emacs): Update source code snapshot in `devel' spec.
-
 2019-06-20  Alexander Fomin  <github@afomin.dev>
 
 	* beets.rb (Beets): Use HTTPS enabled homepage.
@@ -10,6 +6,9 @@
 	requests 2.22.0, urllib.1.25.3, audioread 2.1.8, pyacoustid 1.1.7,
 	httplib2 0.13.0, lxml 4.3.4, mock 3.0.5, protobuf 3.8.0 and
 	pycryptodomex 3.8.2.
+
+	* emacs.rb (Emacs): Update source code snapshot in `devel' spec.
+	Only apply patch for multicolor fonts when using `stable' spec.
 
 2019-05-22  Alexander Fomin  <github@afomin.dev>
 
