@@ -1,3 +1,7 @@
+2019-06-20  Alexander Fomin  <afomin@MacBooklexander>
+
+	* emacs.rb (Emacs): Update source code snapshot in `devel' spec.
+
 2019-06-20  Alexander Fomin  <github@afomin.dev>
 
 	* beets.rb (Beets): Use HTTPS enabled homepage.

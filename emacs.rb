@@ -12,8 +12,8 @@ class Emacs < Formula
   end
 
   devel do
-    url "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50_2019-01-17.tar.gz"
-    sha256 "40342ef8c337cfdd38c6e60307c4a761b318681e35b5e2f52a534a37f8a9dbc4"
+    url "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50_2019-06-08.tar.gz"
+    sha256 "0ecdb0fb05a30fe6356fb7ee9ce34ff86fea7f2751b90b13e74ccd209fa19c1f"
 
     version "27.0.50"
   end
